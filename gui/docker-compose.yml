@@ -1,0 +1,14 @@
+version: '3.2'
+
+services:
+  dev:
+    build: .
+    container_name: mydevcontainer
+    network_mode: "host"
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./HelloFullStack:/home/devuser/HelloFullStack
+      # You can also share a folder with gui tools like Java IDE for example
+    environment:
+      - DISPLAY
+    command: "tail -f /dev/null"

@@ -1,0 +1,1 @@
+Very basic hello world Java example. Added to the repo to show how to build a container with java, git etc installed and share Java repo with it. See docker-compose.yml in gui directory.
